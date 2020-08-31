@@ -1,4 +1,4 @@
-package main
+    package main
     import (
      "fmt"
      "github.com/gomodule/redigo/redis"
