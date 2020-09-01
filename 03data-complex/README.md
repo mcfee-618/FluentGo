@@ -75,3 +75,6 @@ delete(m, key)    //删除某个键
 elem, ok = m[key] //检测某个键是否存在
 ```
 
+* make和new
+
+map只能为slice, map, channel分配内存，并返回一个初始化的值，new则用于结构体。
