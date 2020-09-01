@@ -9,13 +9,13 @@ type msg struct {
 func main() {
 	fmt.Println("start")
 	c := test(63, 0)
-	fmt.Println(c)
+	fmt.Println(c.content)
 	fmt.Println("end")
 }
 
-func test(a int32, b int32) *msg {
+func test(a int32, b int32) (obj *msg) {
 
-	obj := new(msg)
+	obj = new(msg)
 	obj.content = "111"
 	defer func() {
 		if r := recover(); r != nil {

@@ -23,3 +23,9 @@ func main() {
 func compute(a int32, b int32) (int32, int32) {
 	return a + b, a - b
 }
+
+// 命名返回值
+func add2(a int, b int) (sum int) {
+	sum = a + b
+	return
+}
