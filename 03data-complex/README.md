@@ -79,4 +79,14 @@ elem, ok = m[key] //检测某个键是否存在
 
 map只能为slice, map, channel分配内存，并返回一个初始化的值，new则用于结构体.
 
-调用用内建的new函数。表达式new(T)将创建一个T类型的匿名变量，初始化为T类型的零值，然后返回变量地址，返回的指针类型为 *T,这点有点类似malloc. 
+调用用内建的new函数。表达式new(T)将创建一个T类型的匿名变量，初始化为T类型的零值，然后返回变量地址，返回的指针类型为 *T，下面两个函数有相同的行为。
+
+```
+    func newInt() *int {
+    　　return new(int)
+    }
+    func newInt() *int {
+    　　var dummy int
+    　　return &dummy
+    }
+```
