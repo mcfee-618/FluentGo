@@ -27,3 +27,6 @@ GoPath 目录约定有三个子目录
 * pkg：存放编译时生成的中间文件（ * .a ）；
 * bin： 存放编译后生成的可执行文件 （ 在项目内执行 go install，会在 bin 目录下生成一个可执行文件）。
 当我们要引用 GitHub 上的开源包时，比如使用 github.com/gomodule/redigo/redis 这个包来用 golang 进行 redis 的操作。可以执行 go get github.com/gomodule/redigo/redis 命令，将会在 GoPath 的 src 目录下生成一个 /github.com/gomodule/redigo 这样的目录结构，后面即可在项目中像引用fmt包一样引用。
+
+
+go get 下载的包保存在哪里呢？一般他会保存在这个目录：$GOPATH/src , 若你有多个GOPATH（工作区），则会保存在第一个工作区中。获取前，请确保 GOPATH 已经设置。Go 1.8 版本之后，GOPATH 默认在用户目录的 go 文件夹下。

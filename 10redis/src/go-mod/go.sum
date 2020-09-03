@@ -1,0 +1,3 @@
+github.com/aceld/zinx v0.0.0-20200306023939-bc416543ae24 h1:FXTxdJTpAXJag3krb03DIM6BlAf0cy9XV+VXx9DbNAM=
+github.com/aceld/zinx v0.0.0-20200306023939-bc416543ae24/go.mod h1:bMiERrPdR8FzpBOo86nhWWmeHJ1cCaqVvWKCGcDVJ5M=
+github.com/golang/protobuf v1.3.3/go.mod h1:vzj43D7+SQXF/4pzW/hwtAqwc6iTitCiVSaWz5lYuqw=
